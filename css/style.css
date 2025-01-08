@@ -1,0 +1,166 @@
+/* General Reset and Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+}
+
+:root {
+    --bg-color: #0c0c0c;
+    --text-color: #fff;
+    --main-color: #ae8957;
+    --font-size-large: 2.5rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 35px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.50s ease;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    display: inline-block;
+    margin: 0 35px;
+    color: var(--text-color);
+    font-size: var(--font-size-small);
+    transition: all 0.6s ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 9px 24px;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    border-radius: 7px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-5px);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Hero Section for Index Only */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.hero-text h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.main-hero {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.hero-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Buttons and Price Styling */
+.main-hero .btn {
+    padding: 12px 40px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.main-hero .btn:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+
